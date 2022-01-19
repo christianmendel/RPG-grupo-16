@@ -1,0 +1,31 @@
+[
+    {
+        "id": 1,
+        "name": "short sword",
+        "damage": 10,
+        "pound": 2,
+        "path": "img/equipment/shortSword.png",
+        "tipo": "MELEE",
+        "requiredLv": 1
+    }
+
+    {
+        "id": 2,
+        "name": "short bow",
+        "damage": 3,
+        "pound": 0.5,
+        "path": "img/equipment/shortBow.png",
+        "tipo": "RANGE",
+        "requiredLv": 1
+    }
+
+    {
+        "id": 3,
+        "name": "basic staff",
+        "damage": 1,
+        "pound": 1,
+        "path": "img/equipment/basicStaff.png",
+        "tipo": "SPELL",
+        "requiredLv": 1
+    }
+]

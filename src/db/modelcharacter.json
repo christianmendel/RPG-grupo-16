@@ -1,0 +1,18 @@
+{
+    "name": null,
+    "level": null,
+    "experience": null,
+    "pound": null,
+    "equipaments": {
+        "armor": {
+            "healm": null,
+            "chest": null,
+            "boots": null,
+            "gloves": null
+        },
+
+        "weaponRight": null,
+        "weaponLeft": null,
+        "inventory": []
+    }        
+}

@@ -1,0 +1,41 @@
+[
+    {
+        "id": 1,
+        "class": "Guerreiro",
+        "lifeBase": 20,
+
+        "strBase": 10,
+        "dexBase": 5,
+        "agiBase": 5,
+        "intBase": 5,
+       
+        "type": "MELEE"
+    },
+    {
+        "id": 2,
+        "class": "Arqueiro",
+        "lifeBase": 15,
+
+        "strBase": 5,
+        "dexBase": 10,
+        "agiBase": 8,
+        "intBase": 5,
+
+        "type": "RANGE"
+    },
+    {
+        "id": 3,
+        "class": "Mago",
+       
+        
+        "lifeBase": 12,
+
+        "strBase": 10,
+        "dexBase": 5,
+        "agiBase": 10,
+        "intBase": 10,
+
+        "type": "SPELL"
+    }
+  
+]
