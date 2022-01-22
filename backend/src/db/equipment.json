@@ -7,8 +7,7 @@
         "path": "img/equipment/shortSword.png",
         "kind": "WARRIOR",
         "requiredLv": 1
-    }
-
+    },
     {
         "id": 2,
         "name": "short bow",
@@ -17,8 +16,7 @@
         "path": "img/equipment/shortBow.png",
         "kind": "ARCHER",
         "requiredLv": 1
-    }
-
+    },
     {
         "id": 3,
         "name": "basic staff",
@@ -28,4 +26,4 @@
         "kind": "WISARD",
         "requiredLv": 1
     }
-]
+] 
