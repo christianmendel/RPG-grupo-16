@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "breed": "Elfo"
+    },
+
+    {
+        "id": 2,
+        "breed": "Anao"
+    },
+
+    {
+        "id": 3,
+        "breed": "Humano"
+    }
+  
+]
