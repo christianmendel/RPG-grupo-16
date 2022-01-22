@@ -1,0 +1,12 @@
+[
+   {
+        "id": 1,
+        "name": "polish like armory weapons",
+        "spendTime": 5000,
+        "reward" : {
+            "xp": 10,
+            "gold": 150
+        }
+      
+   } 
+]

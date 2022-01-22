@@ -1,0 +1,26 @@
+{
+    "name": null,
+    "kind":null,
+    "status" : {
+        "level": null,
+        "experience": null,
+        "str": null,
+        "dex": null,
+        "agi": null,
+        "int": null
+    },
+
+    "equipaments": {
+        "pound": null,
+        "armor": {
+            "healm": null,
+            "chest": null,
+            "boots": null,
+            "gloves": null
+        },
+
+        "weaponRight": null,
+        "weaponLeft": null,
+        "inventory": {"arsenal": [] , "itens": []}
+    }        
+}

@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "kind": "WARRIOR",
+        "lifeBase": 20,
+
+        "strBase": 10,
+        "dexBase": 5,
+        "agiBase": 5,
+        "intBase": 5
+    },
+    {
+        "id": 2,
+        "kind": "ARCHER",
+        "lifeBase": 15,
+
+        "strBase": 5,
+        "dexBase": 10,
+        "agiBase": 8,
+        "intBase": 5
+
+    },
+    {
+        "id": 3,
+        "kind": "WISARD",
+        "lifeBase": 12,
+
+        "strBase": 10,
+        "dexBase": 5,
+        "agiBase": 10,
+        "intBase": 10
+    }
+  
+]
