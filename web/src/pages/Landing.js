@@ -1,84 +1,50 @@
-import React, {useEffect, useState} from 'react';
-import '../styles/global.css';
-import '../styles/pages/landing.css';
-import background from '../img/background.png';
-import api from '../api/api'
+import React, { useEffect, useState } from "react";
+import "../styles/global.css";
+import "../styles/pages/landing.css";
+import background from "../img/background.png";
+import ContainerMenu from "../components/menu/container-menu";
 
-function Landing() {
-
-    const [toggleState, setToggleState] = useState(1);
-    const [races, setRaces] = useState([]);
-
-    useEffect(() => {
-        api.get('racas').then(response=>{
-            setRaces(response.data)
-        })  
-
-        //eslint-disable-next-line react-hooks/exhaustive-deps
-    },[])  
-
-    const toggleTab = (index) => {
-        setToggleState(index);
-    };
-
-    return (
-        <div className="menu-user">
-            <img className="background" src={background} alt=""/>
-            <div className="menu">
-                <div className="container container-menu">
-                    <div className="bloc-tabs">
-                        <button
-                            className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
-                            onClick={() => toggleTab(1)}
-                        >
-                            Criar personagem
-                        </button>
-                        <button
-                            className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
-                            onClick={() => toggleTab(2)}
-                        >
-                            Selecionar personagem
-                        </button>
-                        <button
-                            className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
-                            onClick={() => toggleTab(3)}
-                        >
-                            Excluir personagem
-                        </button>
-                    </div>
+const Landing = () => {
+  return (
+    <div className="menu-user">
+      <img className="background" src={background} alt="" />
+      <ContainerMenu
+        tabs={{
+          pages: [
+            {
+              id: 1,
+              title: "Criar Personagem",
+              body: (
+                <div>
+                  <h1>teste Criar Pesonagem</h1>
+                  <h2>outro teste</h2>
                 </div>
-
-                <div className="container container-tab">
-                    <div className="content-tabs">
-                        <div className={toggleState === 1 ? "content  active-content" : "content"} >
-                                <h2>Criação de personagem</h2>
-                                <label htmlFor="">Nome: </label>
-                                <input type="text"/>
-                                <label htmlFor="">Raça: </label>
-                                <select name="" id="">
-                                    {races?.map(item => <option key={item.id}> {item.breed} </option>)}
-                                </select>
-                                <label htmlFor="">Classe: </label>
-                                <select name="" id="">
-                                    {races?.map(item => <option key={item.id}> {item.breed} </option>)}
-                                </select>
-                                {/* <button onClick={testeDados}>BotaoDosDados</button> */}
-                        </div>
-                        <div className={toggleState === 2 ? "content  active-content" : "content"}>
-                            <h2>Personagens</h2>
-                            <h3>Anão</h3>
-                            <h3>Assassino</h3>
-                        </div>
-
-                        <div className={toggleState === 3 ? "content  active-content" : "content"}>
-                            <h2>Personagens</h2>
-                            <p>racas</p>
-                        </div>
-                    </div>
+              ),
+            },
+            {
+              id: 2,
+              title: "Selecionar Personagem",
+              body: (
+                <div>
+                  <h1>Selecionar Personagem</h1>
+                  <h2>outro teste Selecionar Personagem</h2>
                 </div>
-            </div>
-        </div>
-    );
-}
+              ),
+            },
+            {
+              id: 3,
+              title: "Sair",
+              body: (
+                <div>
+                  <h1>Sair</h1>
+                </div>
+              ),
+            },
+          ],
+        }}
+      />
+    </div>
+  );
+};
 
 export default Landing;
