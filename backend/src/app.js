@@ -1,11 +1,10 @@
-import express from "express";
-import cors from 'cors';
-import routes from './routes.js';
+import express from 'express';
+import { mainRouter } from './routes/index.js';
 
 const app = express();
+app.use('/', mainRouter);
 
-app.use(cors());
-app.use(express.json());
-app.use(routes);
-
-app.listen(3030)
+/*app.get('/', (req, res) => {
+  res.send('teste');
+});*/
+app.listen(3333);

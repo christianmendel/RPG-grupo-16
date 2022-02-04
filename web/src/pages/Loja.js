@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/global.css";
 import "../styles/pages/loja.css";
 import background from "../img/background.png";
-import ContainerMenu from "../components/menu/container-menu";
+import ContainerMenu from "../components/menu/index";
 
 function Loja() {
   return (

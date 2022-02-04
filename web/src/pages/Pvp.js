@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/global.css";
 import "../styles/pages/pvp.css";
-import ContainerMenu from "../components/menu/container-menu";
+import ContainerMenu from "../components/menu/index";
 import background from "../img/background.png";
 
 function Pvp() {

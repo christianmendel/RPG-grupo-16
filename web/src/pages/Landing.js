@@ -1,10 +1,20 @@
-import React, { useEffect, useState } from "react";
-import "../styles/global.css";
-import "../styles/pages/landing.css";
-import background from "../img/background.png";
-import ContainerMenu from "../components/menu/container-menu";
+import '../styles/global.css';
+import '../styles/pages/landing.css';
+import background from '../img/background.png';
+import ContainerMenu from '../components/menu/index';
+import { CharacterCreation } from '../components/characterCreation/index';
+import api from '../api/api';
+
+import { useEffect, useState } from 'react';
 
 const Landing = () => {
+  const [criarPersonagem, setCriarPersonagem] = useState([]);
+  const [selecionarPersonagem, setSelecionarPersonagem] = useState([]);
+
+  //-------------------------
+  //TODO pegar os json dao back (porta 3333)
+  //-------------------------
+
   return (
     <div className="menu-user">
       <img className="background" src={background} alt="" />
@@ -13,17 +23,19 @@ const Landing = () => {
           pages: [
             {
               id: 1,
-              title: "Criar Personagem",
+              title: 'Criar Personagem',
               body: (
-                <div>
-                  <h1>teste Criar Pesonagem</h1>
-                  <h2>outro teste</h2>
-                </div>
+                <CharacterCreation
+                  db={{
+                    kind: [{ name: 'teste', id: 'teste' }],
+                    races: [{ name: 'teste', id: 'teste' }],
+                  }}
+                />
               ),
             },
             {
               id: 2,
-              title: "Selecionar Personagem",
+              title: 'Selecionar Personagem',
               body: (
                 <div>
                   <h1>Selecionar Personagem</h1>
@@ -33,10 +45,10 @@ const Landing = () => {
             },
             {
               id: 3,
-              title: "Sair",
+              title: 'Visão geral',
               body: (
                 <div>
-                  <h1>Sair</h1>
+                  <h1>Visão geral</h1>
                 </div>
               ),
             },
